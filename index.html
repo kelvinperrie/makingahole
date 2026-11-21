@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Making a Hole</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" class="hidden">
+    <div class="panel hud-panel">
+      <div class="row"><span id="hud-money" class="money">$0</span><span id="hud-depth" class="depth">0m</span></div>
+      <div class="bar cargo" id="bar-cargo"><div class="fill"></div><span class="txt"></span></div>
+      <div class="bar fuel" id="bar-fuel"><div class="fill"></div><div class="mark hidden" id="fuel-mark"></div><span class="txt"></span></div>
+      <div id="hud-trip" class="hidden"></div>
+      <div class="bar hull" id="bar-hull"><div class="fill"></div><span class="txt"></span></div>
+      <div id="hud-heat" class="ok"></div>
+    </div>
+  </div>
+  <div id="hud-items" class="panel hidden"></div>
+  <div id="prompt" class="hidden"></div>
+  <div id="toasts"></div>
+
+  <div id="modal" class="hidden"><div id="modal-panel" class="panel modal-panel"></div></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/rng.js"></script>
+  <script src="js/textures.js"></script>
+  <script src="js/world.js"></script>
+  <script src="js/miner.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/worm.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
